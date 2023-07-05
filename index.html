@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Precio con IVA - Precio sin IVA</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+
+<main>
+    <h1 class="title">Precio con y sin IVA</h1>
+    <div class="description">
+        <p>Una pequeña calculadora para agregar o quitar IVA a un monto positivo. Se usa como base un 19%
+            únicamente.</p>
+    </div>
+
+
+    <div id="operation" class="operation">
+        <p>Elegir agregar o quitar IVA</p>
+        <div class="options">
+            <div class="label">
+                <input id="withIva" type="radio" name="color" value="withIva" checked>
+                <label for="withIva">Con IVA (+19%)</label>
+            </div>
+            <div class="label">
+                <input id="withoutIva" type="radio" name="color" value="withoutIva">
+                <label for="withoutIva">Sin IVA (-19%)</label>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="amount">
+        <div class="message" id="message">
+        </div>
+        <input id="amount" type="number" placeholder="Ingresar monto..." min="0" autofocus>
+    </div>
+
+    <div class="calculate">
+        <button id="calculate">Calcular</button>
+    </div>
+
+    <div class="result">
+        <p>Resultado: <span id="result">0</span></p>
+    </div>
+</main>
+
+<!-- Js -->
+<script src="./js/main.js"></script>
+</body>
+</html>
