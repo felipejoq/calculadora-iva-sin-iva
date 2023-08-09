@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora Precio con IVA y sin IVA</title>
+  <script type="module" crossorigin src="/calculadora-iva-sin-iva/assets/index-8f03175b.js"></script>
+  <link rel="stylesheet" href="/calculadora-iva-sin-iva/assets/index-a0ade771.css">
+</head>
+
+<body>
+
+  <main>
+    <header>
+      <h1 class="color-brown">Precio con y sin IVA </h1>
+    </header>
+    <section class="background-beige color-brown">
+      <p>Una pequeña calculadora para agregar o quitar IVA a un monto positivo. Se usa como base un 19% únicamente.</p>
+    </section>
+
+    <section id="options" class="options color-brown">
+      <div class="option">
+        <input id="withIva" type="radio" name="operation" value="withIva" checked>
+        <label for="withIva">Con IVA (+19%)</label>
+      </div>
+      <div class="option">
+        <input id="withoutIva" type="radio" name="operation" value="withoutIva">
+        <label for="withoutIva">Sin IVA (-19%)</label>
+      </div>
+    </section>
+
+    <section class="amount">
+      <div class="message" id="message">
+      </div>
+      <input id="amount" type="number" placeholder="Ingresar monto..." min="0" autofocus="">
+    </section>
+
+    <section class="get-price">
+      <button id="btnGetPrice" class="background-brown color-beige">Calcular</button>
+    </section>
+
+    <section class="result">
+      <p>Resultado: <span id="result"></span></p>
+    </section>
+  </main>
+
+  
+</body>
+
+</html>
