@@ -4,17 +4,11 @@ const CLPCurrency = new Intl.NumberFormat('es-CL', {
     minimumFractionDigits: 2
 });
 
-export const calPrice = (amount, operations) => {
+export const calPrice = (amount, operation) => {
+    
     let total = 0;
-    let operationSelected;
 
-    operations.forEach(operation => {
-        if (operation.checked) {
-            operationSelected = operation.value
-        }
-    });
-
-    operationSelected === 'withIva'
+    operation === 'WithIVA'
         ? total = (amount * 1.19)
         : total = (amount / 1.19);
 
