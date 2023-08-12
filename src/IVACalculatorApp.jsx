@@ -1,7 +1,8 @@
-import Head from './components/general/Head';
 import Options from './components/controls/Options';
 import Amount from './components/controls/Amount';
+import Head from './components/general/Head';
 import Result from './components/general/Result';
+import Footer from './components/general/Footer';
 
 import { useState } from 'react';
 import { calPrice } from './helpers/calculate.helpers';
@@ -35,6 +36,7 @@ function App() {
         <Amount onChangeAmount={handleInputChange} />
         <Result result={result} />
       </form>
+      <Footer />
     </main>
   )
 }
